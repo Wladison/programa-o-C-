@@ -31,3 +31,4 @@ D:\calebe\programação-C#\programa-o-c-\src\minhaapi\obj\Debug\net7.0\refint\mi
 D:\calebe\programação-C#\programa-o-c-\src\minhaapi\obj\Debug\net7.0\minhaapi.pdb
 D:\calebe\programação-C#\programa-o-c-\src\minhaapi\obj\Debug\net7.0\minhaapi.genruntimeconfig.cache
 D:\calebe\programação-C#\programa-o-c-\src\minhaapi\obj\Debug\net7.0\ref\minhaapi.dll
+d:\calebe\programação-C#\programa-o-c-\src\minhaapi\obj\Debug\net7.0\minhaapi.sourcelink.json
