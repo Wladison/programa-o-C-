@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "d:\\calebe\\programação-C#\\programa-o-c-\\src\\minhaapi\\minhaapi.csproj": {}
+    "D:\\calebe\\programação-C#\\programa-o-c-\\src\\minhaapi\\minhaapi.csproj": {}
   },
   "projects": {
-    "d:\\calebe\\programação-C#\\programa-o-c-\\src\\minhaapi\\minhaapi.csproj": {
+    "D:\\calebe\\programação-C#\\programa-o-c-\\src\\minhaapi\\minhaapi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\calebe\\programação-C#\\programa-o-c-\\src\\minhaapi\\minhaapi.csproj",
+        "projectUniqueName": "D:\\calebe\\programação-C#\\programa-o-c-\\src\\minhaapi\\minhaapi.csproj",
         "projectName": "minhaapi",
-        "projectPath": "d:\\calebe\\programação-C#\\programa-o-c-\\src\\minhaapi\\minhaapi.csproj",
+        "projectPath": "D:\\calebe\\programação-C#\\programa-o-c-\\src\\minhaapi\\minhaapi.csproj",
         "packagesPath": "C:\\Users\\IBL\\.nuget\\packages\\",
-        "outputPath": "d:\\calebe\\programação-C#\\programa-o-c-\\src\\minhaapi\\obj\\",
+        "outputPath": "D:\\calebe\\programação-C#\\programa-o-c-\\src\\minhaapi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\IBL\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\IBL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
