@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("minhaapi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5677d6ab3573d26359775c0762012f6992e98b69")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ff85dfc2ec73da0b9c9ca38955b73c487ee5e037")]
 [assembly: System.Reflection.AssemblyProductAttribute("minhaapi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("minhaapi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

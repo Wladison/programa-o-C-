@@ -7,14 +7,15 @@ namespace minhaapi.modulo
     public class Employee
     {
         [Key]
-        public int Id { get; private set; }
-        public string descricao { get; private set; }
-        public int status { get; private set; }
-        public Employee(int id, string descricao,int  status) 
+        public int id { get; private set; }
+        public string nome { get; private set; }
+        public int age { get; private set; }
+        public string? photo { get; private set; }
+        public Employee(string nome,int  age,string photo) 
         {
-            this.Id = id;
-            this.descricao = descricao ?? throw new ArgumentNullException (descricao);
-            this.status = status;
+            this.nome = nome ?? throw new ArgumentNullException (nameof(nome));
+            this.age = age;
+            this.photo = photo;
         
         }
     }

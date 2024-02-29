@@ -18,12 +18,8 @@ namespace minhaapi.Controllers
         [HttpPost]
         public IActionResult add(EmployeeViewModel employeeView)
         {
-            var filepath = Path.Combine("storage", employeeView.status.FileName);
-
-            using Stream filestream = new FileStream(FilePath, FileMode.Create);
-            employeeView.status.copyto(filestream);
-
-            var employee = new Employee(employeeView.id, employeeView.descricao, employeeView.status);
+           
+            var employee = new Employee(employeeView.nome, employeeView.age, null);
            
             _employeeRepository.add(employee);
            

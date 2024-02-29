@@ -2,8 +2,8 @@
 {
     public class EmployeeViewModel
     { 
-        public string descricao {  get; set; }
-        public int id { get; set; }
-        public int status { get; set; }
+        public string nome{  get; set; }
+        public int age { get; set; }
+       
     }
 }

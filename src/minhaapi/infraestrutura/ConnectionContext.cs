@@ -11,8 +11,8 @@ namespace minhaapi.infraestrutura
         
           => optionsBuilder.UseNpgsql(
            "Server=localhost;" +
-           "port=5432;Database=employee;" +
-           "User Id+postgres;" +
+           "port=5432;Database=employee_sample;" +
+           "User Id=postgres;" +
            "password=C@lebe10"
               ); 
         
