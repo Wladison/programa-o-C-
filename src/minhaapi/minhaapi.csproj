@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="storage\" />
+    <Folder Include="Storage\" />
   </ItemGroup>
 
 </Project>

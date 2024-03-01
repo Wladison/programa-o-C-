@@ -17,5 +17,12 @@ namespace minhaapi.infraestrutura
         {
             return _context.employees.ToList();
         }
+        
+        public Employee Get(int id)
+        {
+            return _context.employees.Find(id);
+        }
+
+       
     }
 }

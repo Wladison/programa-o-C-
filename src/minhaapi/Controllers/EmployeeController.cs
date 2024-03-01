@@ -16,16 +16,35 @@ namespace minhaapi.Controllers
             _employeeRepository = employeeRepository ?? throw new ArgumentNullException(nameof(employeeRepository));
         }
         [HttpPost]
-        public IActionResult add(EmployeeViewModel employeeView)
+        public IActionResult add([FromForm] EmployeeViewModel employeeView)
         {
-           
-            var employee = new Employee(employeeView.nome, employeeView.age, null);
-           
+            var filePath = Path.Combine("storage", employeeView.photo.FileName);
+
+            using Stream fileStream = new FileStream(filePath, FileMode.Create);
+            
+            employeeView.photo.CopyTo(fileStream);
+
+            var employee = new Employee(employeeView.nome, employeeView.age, filePath);
+
             _employeeRepository.add(employee);
-           
+
             return Ok();
         }
-        [HttpGet]
+
+        [HttpPost]
+        [Route("{id}z/download")]
+        public IActionResult DownloadPhoto(int id)
+        {
+            var employee = _employeeRepository.Get(id);
+
+            var dataBytes = System.IO.File.ReadAllBytes(employee.photo);
+
+            return File(dataBytes, "image/png");
+
+        }
+
+
+       [HttpGet]
         public IActionResult Get()
         { 
             var employess = _employeeRepository.Get();
