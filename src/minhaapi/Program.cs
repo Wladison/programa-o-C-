@@ -1,5 +1,7 @@
+using Microsoft.AspNetCore.Mvc;
 using minhaapi.infraestrutura;
 using minhaapi.modul;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,6 +13,31 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddTransient<iemployeeRepository, employeeRepository>();
+
+
+
+var key = Encoding.ASCII.GetBytes(minhaapi.Key.Secret);
+
+builder.Services.AddAuthentication(x =>
+    {
+        x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+        x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+    }).AddJWTBearer(x =>
+    {
+        x.RequireHttspsMetadata = false;
+        x.SvaeToken = true;
+        x.TokenvaliidationParameters = new TokenvaliidationParameters
+        {
+            validateIssuerSigningKey = true;
+        IssuerSingningkey - new SymmetricSecuritykey(key);
+        validateIssuer = false;
+        ValidateAudience = false;
+
+    
+
+    });
+
+
 
 var app = builder.Build();
 
